@@ -38,7 +38,7 @@ while like == str("Y"):
     for i in l:
         l_n.append(pow(i, n))
     
-    print(l_n)
+    print('l_n = {} - элементы списка в ' + str(n) + 'степени'.format(l_n))
     like = str( input( "Ещё? Y / N "))
     
 if like == str("N"):
