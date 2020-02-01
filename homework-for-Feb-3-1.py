@@ -10,6 +10,7 @@ l2 = []
 l_2 = []
 l3 = []
 l_3 = []
+l_n = []
 
 for i in range(c):
     l.append(randint(a, b))
@@ -27,21 +28,18 @@ for i in l:
     l_3.append(pow(i,-3))
 
     
-print('l = {}\nl2 = {}\nl_2 = {}\nl3 = {}\nl_3 = {}'.format(l, l2, l_2, l3, l_3))
+print ('l = {} - созданный список\nl2 = {} - элементы списка в квадрате\nl_2 = {} - элементы списка в -2 степени\nl3 = {} - элементы списка в кубе\nl_3 = {} - элементы списка в -3 степени'.format(l, l2, l_2, l3, l_3))
 
 like = str("Y") or str("N")
-like = str( input( "Нравится? Y / N "))
+like = str( input( "Хотите продолжить? Y / N "))
 
-while like == str("N"):
+while like == str("Y"):
     n = float(input("В какую степень? Введите число: ")) 
-    
-    l_n = []
-    
     for i in l:
         l_n.append(pow(i, n))
     
     print(l_n)
-    like = str( input( "Доволен? Y / N "))
+    like = str( input( "Ещё? Y / N "))
     
-if like == str("Y"):
-    print ('l = {}\nl2 = {}\nl_2 = {}\nl3 = {}\nl_3 = {}\nl_n = {}'.format(l, l2, l_2, l3, l_3, l_n))
+if like == str("N"):
+    print ('Ну вот и славно')
